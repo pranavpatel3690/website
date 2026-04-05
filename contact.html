@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Rancho Patel</title>
+    <meta name="description" content="Get in touch with Rancho Patel for adventure assignments, editorial commissions, fine art prints, and creative collaborations worldwide.">
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ranchopatel.com/contact.html">
+    <meta property="og:title" content="Contact — Rancho Patel">
+    <meta property="og:description" content="Available for adventure assignments, editorial commissions, and commercial projects worldwide.">
+    <meta property="og:image" content="https://www.ranchopatel.com/images/hero_main.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ranchopatel.com/contact.html">
+    <meta property="twitter:title" content="Contact — Rancho Patel">
+    <meta property="twitter:description" content="Available for adventure assignments and creative collaborations worldwide.">
+    <meta property="twitter:image" content="https://www.ranchopatel.com/images/hero_main.jpg">
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css?v=1.1">
+</head>
+
+<body class="contact-page">
+
+    <div class="page-transition" id="page-transition"></div>
+
+    <!-- Top Navigation -->
+    <header id="site-header" class="solid-mode">
+        <a href="contact.html" id="nav-contact">Contact</a>
+        <a href="index.html" id="nav-logo"><img src="images/logo.png" alt="Rancho Patel" class="nav-logo-img"></a>
+        <button id="nav-menu-btn" aria-label="Open menu">
+            <span>Menu</span>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </header>
+
+    <nav id="menu-overlay" aria-hidden="true">
+    <div id="menu-image-half">
+      <img src="images/hero_main.jpg" alt="Featured Menu Image" id="menu-featured-img">
+    </div>
+    <div id="menu-content-half">
+        <div id="menu-links">
+            <a href="index.html" class="menu-link">Home</a>
+            <a href="about.html" class="menu-link">About</a>
+            <a href="stills.html" class="menu-link">Stills</a>
+            <a href="motion.html" class="menu-link">Motion</a>
+            <a href="contact.html" class="menu-link">Contact</a>
+        </div>
+        <div id="menu-footer">
+            <a href="https://instagram.com/prnv_patel_" target="_blank" rel="noopener noreferrer" class="menu-social">Instagram</a>
+        </div>
+        </div>
+  </nav>
+
+    <!-- Split Screen Contact -->
+    <div id="contact-split">
+
+        <!-- Left: Black half -->
+        <div id="contact-left">
+            <h2>Get In<br>Touch</h2>
+            <p>Available for adventure assignments, editorial commissions, fine art prints, brand collaborations, and
+                speaking engagements worldwide.</p>
+            <a href="mailto:hello@ranchopatel.com" id="contact-email-link">hello@ranchopatel.com</a>
+            <div id="contact-socials">
+                <!-- Instagram -->
+                <a href="https://instagram.com/prnv_patel_" target="_blank" rel="noopener noreferrer" class="contact-social-icon" aria-label="Instagram">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right: White half -->
+        <div id="contact-right" style="position: relative;">
+            <h3>Send a Message</h3>
+
+            <div id="form-success-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <h3 style="margin-bottom:0.5rem;font-size:1.5rem;">Message Received</h3>
+                <p style="color:#666;font-size:0.9rem;">Thanks for reaching out. I'll be in touch shortly.</p>
+            </div>
+
+            <form id="contact-form" action="https://formsubmit.co/Helloranchoo@gmail.com" method="POST"
+                onsubmit="handleFormSubmit(event)">
+                <!-- Formsubmit configuration -->
+                <input type="hidden" name="_subject" value="New Inquiry from Portfolio Website">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-group">
+                    <label for="form-name">Name</label>
+                    <input type="text" id="form-name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="form-email">Email</label>
+                    <input type="email" id="form-email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="form-subject">Subject</label>
+                    <input type="text" id="form-subject" name="subject" placeholder="Commission / Licensing / Other">
+                </div>
+                <div class="form-group">
+                    <label for="form-message">Message</label>
+                    <textarea id="form-message" name="message" placeholder="Tell me about your project..."
+                        required></textarea>
+                </div>
+                <button type="submit" id="form-submit">Send</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rancho Patel — Adventure Photographer & Filmmaker</title>
+  <meta name="description" content="Official portfolio of Rancho Patel. Specializing in high-end adventure, landscape, and short film photography and filmmaking across the globe.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ranchopatel.com/">
+  <meta property="og:title" content="Rancho Patel — Adventure Photographer & Filmmaker">
+  <meta property="og:description" content="Capturing the raw essence of adventure through high-end photography and cinematic filmmaking.">
+  <meta property="og:image" content="https://www.ranchopatel.com/images/hero_main.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.ranchopatel.com/">
+  <meta property="twitter:title" content="Rancho Patel — Adventure Photographer & Filmmaker">
+  <meta property="twitter:description" content="Capturing the raw essence of adventure through high-end photography and cinematic filmmaking.">
+  <meta property="twitter:image" content="https://www.ranchopatel.com/images/hero_main.jpg">
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="style.css?v=1.1">
+</head>
+
+<body class="home-page">
+
+  <!-- Page Transition -->
+  <div class="page-transition" id="page-transition"></div>
+
+  <!-- Top Navigation -->
+  <header id="site-header" class="solid-mode">
+    <a href="contact.html" id="nav-contact">Contact</a>
+    <a href="index.html" id="nav-logo"><img src="images/logo.png" alt="Rancho Patel" class="nav-logo-img"></a>
+    <button id="nav-menu-btn" aria-label="Open menu">
+      <span>Menu</span>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+  </header>
+
+  <!-- Fullscreen Menu Overlay -->
+  <nav id="menu-overlay" aria-hidden="true">
+    <div id="menu-image-half">
+      <img src="images/hero_main.jpg" alt="Featured Menu Image" id="menu-featured-img">
+    </div>
+    <div id="menu-content-half">
+      <div id="menu-links">
+        <a href="index.html" class="menu-link">Home</a>
+        <a href="about.html" class="menu-link">About</a>
+        <a href="stills.html" class="menu-link">Stills</a>
+        <a href="motion.html" class="menu-link">Motion</a>
+        <a href="contact.html" class="menu-link">Contact</a>
+      </div>
+        <div id="menu-footer">
+            <a href="https://instagram.com/prnv_patel_" target="_blank" rel="noopener noreferrer" class="menu-social">Instagram</a>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Hero — Slideshow -->
+  <section id="hero">
+    <div id="hero-slideshow">
+      <div class="hero-slide active" style="background-image:url('images/hero_main.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/l_3.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/DSC01934.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/c_5.jpg')"></div>
+    </div>
+    <div id="hero-overlay">
+      <div id="hero-name-wrap">
+        <h1 id="hero-title">Rancho Patel</h1>
+        <p id="hero-sub">Photographer &amp; Filmmaker</p>
+      </div>
+    </div>
+    <div id="home-footer-overlay">
+      <p>&copy; 2026 Rancho Patel Photography</p>
+    </div>
+    <div id="slide-counter">
+      <span id="slide-current">01</span> / <span id="slide-total">04</span>
+    </div>
+  </section>
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="" id="lightbox-img">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
