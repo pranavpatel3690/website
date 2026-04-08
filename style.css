@@ -315,15 +315,16 @@ button {
 
 .menu-social {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: #222;
   text-transform: uppercase;
   transition: color 0.3s;
 }
 
 .menu-social:hover {
-  color: #111;
+  color: #888;
 }
 
 /* ===== HERO — HOME ===== */
