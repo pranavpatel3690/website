@@ -353,9 +353,13 @@ if (document.body.classList.contains('about-page')) {
   const portrait = document.getElementById('about-side-portrait');
   if (portrait) {
     window.addEventListener('scroll', () => {
-      const scrolled = window.scrollY;
-      // Subtracting a fraction of scroll for subtle lag/parallax
-      portrait.style.transform = `translateY(${scrolled * 0.1}px)`;
+      if (window.innerWidth > 900) {
+        const scrolled = window.scrollY;
+        // Subtracting a fraction of scroll for subtle lag/parallax
+        portrait.style.transform = `translateY(${scrolled * 0.1}px)`;
+      } else {
+        portrait.style.transform = 'none';
+      }
     });
   }
 }
