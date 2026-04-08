@@ -406,10 +406,10 @@ body.home-page {
 #hero-sub {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: clamp(0.6rem, 1.4vw, 0.85rem);
-  font-weight: 400;
-  letter-spacing: 0.5em;
+  font-weight: 600;
+  letter-spacing: 0.4em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.95);
   margin-top: 1rem;
   opacity: 0;
   animation: heroFadeUp 1.2s 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
