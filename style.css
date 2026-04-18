@@ -1246,7 +1246,8 @@ body.contact-page {
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea,
+.form-group select {
   font-family: 'Barlow', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
@@ -1261,13 +1262,26 @@ body.contact-page {
 }
 
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.form-group select:focus {
   border-color: #111;
 }
 
 .form-group textarea {
   resize: none;
   height: 90px;
+}
+
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
 }
 
 #form-submit {
@@ -1904,7 +1918,8 @@ body.contact-page {
 
   /* Prevent iOS zoom on focus */
   .form-group input,
-  .form-group textarea {
+  .form-group textarea,
+  .form-group select {
     font-size: 16px;
     padding: 0.6rem 0;
   }
