@@ -115,7 +115,16 @@ const galleryWrapper = document.getElementById('gallery-wrapper');
 const galleryTrack = document.getElementById('gallery-track');
 
 if (galleryWrapper && galleryTrack) {
-  const items = galleryTrack.querySelectorAll('.gallery-item');
+  let items = galleryTrack.querySelectorAll('.gallery-item');
+  const originalItems = Array.from(items);
+  
+  // Shuffle on load
+  const itemsArray = Array.from(items);
+  itemsArray.sort(() => Math.random() - 0.5);
+  itemsArray.forEach(item => galleryTrack.appendChild(item));
+  
+  // Re-select items after shuffle to ensure DOM order matches NodeList
+  items = galleryTrack.querySelectorAll('.gallery-item');
 
 
   // Lightbox Expansion
@@ -241,6 +250,16 @@ if (galleryWrapper && galleryTrack) {
       galleryTrack.style.transition = 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
 
       setTimeout(() => {
+        if (filter === 'all') {
+          const itemsArray = Array.from(originalItems);
+          itemsArray.sort(() => Math.random() - 0.5);
+          itemsArray.forEach(item => galleryTrack.appendChild(item));
+        } else {
+          originalItems.forEach(item => galleryTrack.appendChild(item));
+        }
+
+        items = galleryTrack.querySelectorAll('.gallery-item');
+
         items.forEach(item => {
           const match = filter === 'all' || item.dataset.category === filter;
           item.classList.toggle('hidden', !match);
